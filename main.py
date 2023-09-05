@@ -2,7 +2,7 @@ import random
 
 rand_number = random.randint(1,5)
 rodadas = 1
-#new_game = 's'
+new_game = 's'
 
 # Funções;
 def game():
@@ -28,13 +28,16 @@ print(25*'*')
 print('\nTente adivinhar o número que o programa escolheu que está no intervalo de 1 a 5\nVocê terá 3 tentativas')
 
 print('\nVamos lá!\n')
-print(rand_number)
+#print(rand_number)
 
 game()
-new_game = input('\nMais uma rodada?(s/n) ')
-if(new_game == 's'):
-    rodadas += 1
-    for i in range(1):
+
+while(new_game == 's'):
+    new_game = input('\nMais uma rodada?(s/n) ')
+    if(new_game == 's'):
+        rodadas += 1
+        rand_number = random.randint(1,5)
+        #print(rand_number) 
         game()
 
 print(f"\nInformações do jogador: \nRodadas: {rodadas}")
