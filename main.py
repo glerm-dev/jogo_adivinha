@@ -2,22 +2,25 @@ import random
 
 rand_number = random.randint(1,5)
 rodadas = 1
-#tentativas  = 3
 #new_game = 's'
 
+# Funções;
 def game():
+    chute = 0
     tentativas  = 3
-    while(tentativas != 0):
+    while(chute != rand_number):
         chute = int(input("Número: "))
         if(chute != rand_number):
             print('Não é esse')
             tentativas -= 1
-        elif(chute == rand_number):
-            print("Acertou!")
-            break
-    print('\nAcabaram as tentativas')
+            if(tentativas == 0):
+                print('\nAcabaram as tentativas')
+                break
+        else:
+            print("É este o número!")
+#
 
-
+# Main do jogo;
 print(25*'*')
 print('\tJogo de Adivinha')
 print(25*'*')
@@ -30,10 +33,12 @@ print(rand_number)
 game()
 new_game = input('\nMais uma rodada?(s/n) ')
 if(new_game == 's'):
-    game()
     rodadas += 1
-elif(new_game == 'n'):
-    print(f"\nInformações do jogador: \nRodadas: {rodadas}")
+    for i in range(1):
+        game()
+
+print(f"\nInformações do jogador: \nRodadas: {rodadas}")
 
 print('\nObrigado por jogar')
 print(25*'*')
+#
