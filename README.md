@@ -1,4 +1,4 @@
-## Jogo de Adivinha
+# Jogo de Adivinha
 Aplicação simples para organizar o que aprendi até o momento sobre Python
 
 <DIV>
@@ -7,11 +7,11 @@ Aplicação simples para organizar o que aprendi até o momento sobre Python
   <P>Nesta pequena aplicação, estão estruturadas as funções que aprendi no momento. Também é uma forma de me acostumar com a indentação esquisita da linguagem.</P>
 </DIV>
 
-# Funções/Conceitos utilizados:
+## Funções/Conceitos utilizados:
 <UL>
   <LI>Laços de repetição;</LI>
-  <LI>Condicionais aninhadas;</LI>
+  <LI>Condicionais;</LI>
   <LI>Funções;</LI>
 </UL>
 
-# Atualizações:  
+## Atualizações:  
