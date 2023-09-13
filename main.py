@@ -5,6 +5,19 @@ rodadas = 1
 new_game = 's'
 
 # Funções;
+def main():
+    welcome()
+    game()
+
+def welcome():
+    print(35*'*')
+    print('\tJogo de Adivinha')
+    print(35*'*')
+
+    print('\nTente adivinhar o número que o programa escolheu que está no intervalo de 1 a 5\nVocê terá 3 tentativas')
+
+    print('\nVamos lá!\n')
+
 def game():
     chute = 0
     tentativas  = 3
@@ -20,24 +33,13 @@ def game():
             print("É este o número!")
 #
 
-# Main do jogo;
-print(25*'*')
-print('\tJogo de Adivinha')
-print(25*'*')
-
-print('\nTente adivinhar o número que o programa escolheu que está no intervalo de 1 a 5\nVocê terá 3 tentativas')
-
-print('\nVamos lá!\n')
-#print(rand_number)
-
-game()
+main()
 
 while(new_game == 's'):
     new_game = input('\nMais uma rodada?(s/n) ')
     if(new_game == 's'):
         rodadas += 1
-        rand_number = random.randint(1,5)
-        #print(rand_number) 
+        rand_number = random.randint(1,5) 
         game()
 
 print(f"\nInformações do jogador: \nRodadas: {rodadas}")
