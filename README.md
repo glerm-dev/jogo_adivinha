@@ -13,5 +13,3 @@ Aplicação simples para organizar o que aprendi até o momento sobre Python
   <LI>Condicionais;</LI>
   <LI>Funções;</LI>
 </UL>
-
-## Atualizações:  
